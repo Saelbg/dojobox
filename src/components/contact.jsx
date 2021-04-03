@@ -39,10 +39,9 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
+                <h2>Comienza ya!</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Hey! te invitamos a que te unas a nuestra causa. Llena el siguiente formulario y dejanos hacer el resto por ti. Entraremos en contacto contigo cuando logremos ofreceter la mejor solucion.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -54,7 +53,7 @@ export const Contact = (props) => {
                         id='name'
                         name='name'
                         className='form-control'
-                        placeholder='Name'
+                        placeholder='Tu Nombre'
                         required
                         onChange={handleChange}
                       />
@@ -76,21 +75,60 @@ export const Contact = (props) => {
                     </div>
                   </div>
                 </div>
+                <div className='row'>
+                  <div className='col-md-6'>
+                    <div className='form-group'>
+                      <input
+                        type='text'
+                        id='origen'
+                        name='origen'
+                        className='form-control'
+                        placeholder='Origen'
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className='help-block text-danger'></p>
+                    </div>
+                  </div>
+                  <div className='col-md-6'>
+                    <div className='form-group'>
+                      <input
+                        type='text'
+                        id='destino'
+                        name='destino'
+                        className='form-control'
+                        placeholder='Destino'
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className='help-block text-danger'></p>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                <div className='col-md-6'>
+                    <div className='form-group'>
+                      <label>Hora de Salida:</label>
+                      <input
+                        type='time'
+                        id='time'
+                        name='time'
+                        className='form-control'
+                        placeholder='Hora'
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className='help-block text-danger'></p>
+                    </div>
+                  </div>
+                  </div>
                 <div className='form-group'>
-                  <textarea
-                    name='message'
-                    id='message'
-                    className='form-control'
-                    rows='4'
-                    placeholder='Message'
-                    required
-                    onChange={handleChange}
-                  ></textarea>
+                  
                   <p className='help-block text-danger'></p>
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  Enviar
                 </button>
               </form>
             </div>
@@ -147,16 +185,7 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-      <div id='footer'>
-        <div className='container text-center'>
-          <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
-            <a href='http://www.templatewire.com' rel='nofollow'>
-              TemplateWire
-            </a>
-          </p>
-        </div>
-      </div>
+      
     </div>
   )
 }
