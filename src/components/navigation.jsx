@@ -1,8 +1,10 @@
+import logo from '../img/logo.png'
 export const Navigation = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
         <div className='navbar-header'>
+        <img src={logo} className="navigation-image"/>
           <button
             type='button'
             className='navbar-toggle collapsed'
@@ -16,7 +18,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
-            DojoBox
+            
           </a>{' '}
         </div>
 

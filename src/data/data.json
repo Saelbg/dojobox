@@ -1,8 +1,8 @@
 {
     "Header": {
 
-        "title": "Que es DojoBox?",
-        "paragraph": "DojoBox es una solucion de movilidad que busca alcanzar el mejor balance entre comodidad, seguridad y costo. Funciona a traves de la exploracion de tu entorno, conectando gente con necesidades de movilidad."
+        "title": "Que es TuRuta?",
+        "paragraph": "TuRuta es una solucion de movilidad que busca alcanzar el mejor balance entre comodidad, seguridad y costo."
 
     },
     "About": {
@@ -21,49 +21,49 @@
         ]
     },
     "Services": [{
-            "icon": "fa fa-wordpress",
+            "icon": "fa fa-shield",
             "name": "Seguridad",
             "text": "No solo seras transportado por un conductor profesional, sino que tambien podras conocer algo de tus companeros de viaje"
         },
         {
-            "icon": "fa fa-cart-arrow-down",
+            "icon": "fa fa-car",
             "name": "Comodidad",
-            "text": "Seamos realistas! a nadie le gusta la experiencia del transporte publico en Bogota"
+            "text": "Seamos realistas, a nadie le gusta la experiencia del transporte publico en Bogota"
         },
         {
-            "icon": "fa fa-cloud-download",
+            "icon": "fa fa-usd",
             "name": "Costo por valor",
             "text": "Te ofrecemos un punto unico entre costo y beneficio"
         }
     ],
     "Testimonials": [{
-            "img": "img/testimonials/01.jpg",
-            "text": "\"Bogota es una ciudad dificil, y parte de eso se debe al caos vehicular, DojoBox es brinda una alternativa que reduce el estres de transportarse!\"",
+            "img": "img/testimonials/07.jpeg",
+            "text": "\"Bogota es una ciudad dificil, y parte de eso se debe al caos vehicular, TuRuta brinda una alternativa que reduce el estres de transportarse!\"",
             "name": "Santiago Vasquez"
         },
         {
-            "img": "img/testimonials/02.jpg",
-            "text": "\"Lo que mas disfruto de usar DojoBox es que puedo relajarme camino a mi trabajo y de regreso. Escuchar musica, dormir, lo que sea, se que estoy en buenas manos.\"",
+            "img": "img/testimonials/01.jpeg",
+            "text": "\"Lo que mas disfruto de usar TuRuta es que puedo relajarme camino a mi trabajo y de regreso. Escuchar musica, dormir, lo que sea, se que estoy en buenas manos.\"",
             "name": "Nicolas Moreno"
         },
         {
-            "img": "img/testimonials/03.jpg",
-            "text": "\"Era un usuario recurrente de otros servicios de movilidad, pero realmente mi bolsillo se estaba viendo afectado, especialmente en horas pico y con tarifas dinamicas. Con DojoBox reduje considerablemente mi gasto en transporte\"",
+            "img": "img/testimonials/06.jpeg",
+            "text": "\"Era un usuario recurrente de otros servicios de movilidad, pero realmente mi bolsillo se estaba viendo afectado, especialmente en horas pico y con tarifas dinamicas. Con TuRuta reduje considerablemente mi gasto en transporte\"",
             "name": "Andres Paez"
         },
         {
-            "img": "img/testimonials/04.jpg",
-            "text": "\"Desde que uso DojoBox logre establecer una rutina diaria que me hace mas productiva, lo recomiendo totalmente!\"",
+            "img": "img/testimonials/02.jpeg",
+            "text": "\"Desde que uso TuRuta logre establecer una rutina diaria que me hace mas productiva, lo recomiendo totalmente!\"",
             "name": "Camila Rodriguez"
         },
         {
-            "img": "img/testimonials/05.jpg",
+            "img": "img/testimonials/05.jpeg",
             "text": "\"Facil y rapido, es todo lo que tengo que decir, me encanta!\"",
-            "name": "Manuel Ortiz"
+            "name": "Lucia Salas"
         },
         {
-            "img": "img/testimonials/06.jpg",
-            "text": "\" Mi seguridad no tiene precio, y definitivamente con DojoBox viajo hacia mi trabajo sin temor alguno\"",
+            "img": "img/testimonials/04.jpeg",
+            "text": "\" Mi seguridad no tiene precio, y definitivamente con TuRuta viajo hacia mi trabajo sin temor alguno\"",
             "name": "Cristina Mendieta"
         }
     ],
@@ -79,12 +79,11 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
-        "facebook": "fb.com",
-        "twitter": "twitter.com",
-        "youtube": "youtube.com"
+
+        "email": "riaperezgo@gmail.com.com",
+        "facebook": "https://www.facebook.com/TuRutaAhora/",
+        "instagram": "https://www.instagram.com/turutaahora/"
+        
     },
     "Features": [{
             "icon": "fa fa-map-marker",

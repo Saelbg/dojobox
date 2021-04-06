@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/Icon.png" type="image/x-icon" />
   <link rel="apple-touch-icon" href="./favicon_io/apple-touch-icon.png" />
   <link
     rel="apple-touch-icon"
@@ -41,7 +41,7 @@
     href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900"
     rel="stylesheet"
   />
-  <title>DojoBox</title>
+  <title>TuRuta | TuRuta</title>
   <meta name="description" content="" />
   <meta name="author" content="@Issaafalkattan" />
 </head>
@@ -50,4 +50,32 @@
   <div id="root"></div>
   <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="/__/firebase/8.3.0/firebase-app.js"></script>
+  <script src="/__/firebase/8.3.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAWXODQAhENY80Rr9HBlcEF5XU3dsXGs3s",
+    authDomain: "dojobox-6937d.firebaseapp.com",
+    projectId: "dojobox-6937d",
+    storageBucket: "dojobox-6937d.appspot.com",
+    messagingSenderId: "957166754796",
+    appId: "1:957166754796:web:770f24c11bbbfb2771bec9",
+    measurementId: "G-NMX29NNFVX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </body>

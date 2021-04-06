@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import Autocomplete from 'react-google-autocomplete';
 
 const initialState = {
   name: '',
@@ -7,7 +8,7 @@ const initialState = {
   message: '',
 }
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState)
+  const [{ name, email, origen, destino, time }, setState] = useState(initialState)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -17,7 +18,7 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(name, email, message)
+    console.log(name, email, origen, destino, time)
     emailjs
       .sendForm(
         'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
@@ -122,8 +123,9 @@ export const Contact = (props) => {
                     </div>
                   </div>
                   </div>
-                <div className='form-group'>
+
                   
+                <div className='form-group'>                  
                   <p className='help-block text-danger'></p>
                 </div>
                 <div id='success'></div>
@@ -134,7 +136,7 @@ export const Contact = (props) => {
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
-            <div className='contact-item'>
+            {/* <div className='contact-item'>
               <h3>Contact Info</h3>
               <p>
                 <span>
@@ -158,7 +160,7 @@ export const Contact = (props) => {
                 </span>{' '}
                 {props.data ? props.data.email : 'loading'}
               </p>
-            </div>
+            </div> */}
           </div>
           <div className='col-md-12'>
             <div className='row'>
@@ -171,14 +173,10 @@ export const Contact = (props) => {
                   </li>
                   <li>
                     <a href={props.data ? props.data.twitter : '/'}>
-                      <i className='fa fa-twitter'></i>
+                      <i className='fa fa-instagram'></i>
                     </a>
                   </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className='fa fa-youtube'></i>
-                    </a>
-                  </li>
+                  
                 </ul>
               </div>
             </div>
