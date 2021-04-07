@@ -38,10 +38,19 @@ h5 {
 p {
   font-size: 15px;
 }
-.psb {
-  font-size: 200px;
+.hsb {
+  text-align: center;
+  font-size: 45px;
   font-weight: bold;
-  color: black;
+  color: rgb(141, 23, 209);
+  visibility: hidden;
+}
+.psb {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
 }
 p.intro {
   margin: 12px 0 0;
@@ -228,7 +237,7 @@ a:focus,
   color: #fff;
   font-size: 82px;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -239,7 +248,7 @@ a:focus,
 .intro p {
   color: #fff;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 30px;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -263,7 +272,7 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #cc11b3 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -340,7 +349,7 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #cc11b3 0%, #5ca9fb 100%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -418,6 +427,13 @@ header .intro-text {
 .testimonial {
   position: relative;
   padding: 20px;
+}
+
+.navigation-image {
+  padding: 0px;
+  display: flex;
+  width: 150px;
+  height: 70px;
 }
 .testimonial-image {
   float: left;

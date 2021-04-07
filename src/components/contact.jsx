@@ -1,37 +1,78 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
-import Autocomplete from 'react-google-autocomplete';
+import firebase from 'firebase/app'
+import firestore from "firebase/firestore"
+import swal from 'sweetalert';
 
-const initialState = {
-  name: '',
-  email: '',
-  message: '',
-}
+
 export const Contact = (props) => {
+
+  var initialState = {
+    name: "",
+    email:"",
+    origen:"",
+    destino:"",
+    hora:"00:00",
+  }
+
+  
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAWXODQAhENY80Rr9HBlcEF5XU3dsXGs3s",
+    authDomain: "dojobox-6937d.firebaseapp.com",
+    projectId: "dojobox-6937d",
+    storageBucket: "dojobox-6937d.appspot.com",
+    messagingSenderId: "957166754796",
+    appId: "1:957166754796:web:770f24c11bbbfb2771bec9",
+    measurementId: "G-NMX29NNFVX"
+  };
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+    
+    
+ }else {
+    firebase.app(); // if already initialized, use that one
+ }
+  
+ let db = firebase.firestore();
+
   const [{ name, email, origen, destino, time }, setState] = useState(initialState)
 
   const handleChange = (e) => {
+
+    // setState({
+    //   [e.target.name]: e.target.value,
+    // });
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
   }
   const clearState = () => setState({ ...initialState })
 
   const handleSubmit = (e) => {
+    
     e.preventDefault()
-    console.log(name, email, origen, destino, time)
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          clearState()
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
+    var usuario = {
+      Nombre: name,
+      Correo: email,
+      Origen: origen,
+      Destino: destino,
+      hora: time
+    }
+
+    
+    db.collection('usuarios').add({
+      item: usuario
+    }).then(()=>{      
+      swal("Genial!", "Gracias Totales! Dentro de poco te contactaremos con mas informacion", "success");
+      
+      
+      
+
+    })
+
+    
+       
+    
   }
   return (
     <div>
@@ -45,7 +86,7 @@ export const Contact = (props) => {
                   Hey! te invitamos a que te unas a nuestra causa. Llena el siguiente formulario y dejanos hacer el resto por ti. Entraremos en contacto contigo cuando logremos ofreceter la mejor solucion.
                 </p>
               </div>
-              <form name='sentMessage' validate onSubmit={handleSubmit}>
+              <form id='contact' name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
@@ -57,6 +98,8 @@ export const Contact = (props) => {
                         placeholder='Tu Nombre'
                         required
                         onChange={handleChange}
+                        
+                        
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -136,6 +179,7 @@ export const Contact = (props) => {
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
+           
             {/* <div className='contact-item'>
               <h3>Contact Info</h3>
               <p>
